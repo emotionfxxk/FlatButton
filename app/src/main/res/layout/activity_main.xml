@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res/com.minarc.flatbutton"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:background="@android:color/background_dark"
+    tools:context=".MainActivity">
+
+    <com.minarc.flatbutton.FlatButton
+        android:id="@+id/download"
+        android:layout_width="wrap_content"
+        android:layout_height="36dp"
+        android:text="download"/>
+
+    <com.minarc.flatbutton.FlatButton
+        android:layout_below="@id/download"
+        android:id="@+id/retry"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="retry"
+        app:strokeWidth="1dp"
+        app:strokeColor="#1E88E5"
+        app:solidColor="#1E88E5"
+        app:normalTextColor="#1E88E5"
+        app:cornerRadius="6dp"/>
+
+    <com.minarc.flatbutton.FlatButton
+        android:layout_below="@id/retry"
+        android:id="@+id/login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        app:roundCorner="false"
+        android:text="Signin"
+        app:strokeWidth="2dp"
+        app:strokeColor="@android:color/white"
+        app:solidColor="@android:color/white"
+        app:normalTextColor="@android:color/white"
+        app:pressedTextColor="@android:color/black"/>
+</RelativeLayout>
